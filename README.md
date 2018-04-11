@@ -34,4 +34,4 @@ Se crea una web que pide (por medio de un *prompt*) una frase al usuario, y devu
 - Devolver la frase encriptada.
 
 #### Diagrama de Flujo:
-![Diagrama de flujo de cifrado cesar](assets/img/DiagramaCifradoCesar.png)
+![Diagrama de flujo de cifrado cesar](assets/images/DiagramaCifradoCesar.png)
