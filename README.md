@@ -3,31 +3,35 @@
 
 
 
-Se crea una web que pide (por medio de un *prompt*) una frase al usuario, y devuelve el mismo mensaje encriptado según el algoritmo de cifrado césar, con un parámetro de 33 espacios hacia la derecha.
+Se crea una web que pide (por medio de un *prompt*) una frase al usuario, y devuelve el mismo mensaje encriptado según el algoritmo de *cifrado césar*, con un parámetro de 33 espacios hacia la derecha.
 
 
-#### Argumento:
+#### Input:
 ```javascript
 [
-  "Laboratoria"
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ]
 ```
-#### Valor de Retorno:
+#### Output:
 ```javascript
 [
-  "Laboratoria"
+  "HIJKLMNOPQRSTUVWXYZABCDEFG"
 ]
 ```
 
+#### Consideraciones Específicas:
+- El programa es capaz de cifrar y descifrar tanto letras mayúsculas como minúsculas, gracias a la aplicación de la fórmula para descifrar: (x - n) % 26.
 
-#### Instrucciones:
+- El código está compuesto por 2 funciones con los siguientes nombres: **_cipher_** y **_decipher_**.
 
-- Obtener una frase.
-- Encriptar la frase.
+- El usuario no puede ingresar un campo vacío o que contenga números.
+
+
+#### Pseudocódigo:
+
+- Obtener una frase del usuario.
+- Encriptar la frase utilizando código Ascii y la fórmula de Cifrado César.
 - Devolver la frase encriptada.
 
-#### Pseudocodigo:
-
-1.- Definir una variable que guarde la frase que el usuario ingresará a través de un prompt.
-
-2.-
+#### Diagrama de Flujo:
+![Diagrama de flujo de cifrado cesar](assets/img/DiagramaCifradoCesar.png)
